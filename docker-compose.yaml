@@ -1,0 +1,12 @@
+# Change the password to what you want.
+
+version: "3.9"
+services:
+  postgres:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=dboperator
+      - POSTGRES_PASSWORD=operatorpass123
+      - POSTGRES_DB=postgres
+    ports:
+      - "5243:5432"
